@@ -77,3 +77,55 @@ export default function ProductScreen() {
   );
 }
 
+const styles = StyleSheet.create({
+  backgroundImage: {
+    flex: 1,
+    width: width,
+    height: height,
+  },
+  imageStyle: {
+    resizeMode: 'cover',
+    opacity: 0.5,
+  },
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'rgba(82, 10, 146, 0.5)', // Mantém a sobreposição roxa translúcida
+  },
+  title: {
+    fontSize: 30,
+    fontWeight: 'bold',
+    color: '#FFF',
+    marginBottom: 20,
+  },
+  input: {
+    width: width * 0.8,
+    height: 50,
+    backgroundColor: '#FFF',
+    marginBottom: 20,
+    paddingHorizontal: 10,
+    borderRadius: 8,
+    borderColor: '#ccc',
+    borderWidth: 1,
+  },
+  button: {
+    backgroundColor: "#f3a10d",
+    width: "80%",
+    height: 50,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 8,
+    marginBottom: 18,
+  },
+  buttonText: {
+    color: "#FFF",
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  successMessage: {
+    fontSize: 18,
+    color: 'green',
+    fontWeight: 'bold',
+  },
+});
