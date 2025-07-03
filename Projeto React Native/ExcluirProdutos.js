@@ -92,3 +92,66 @@ export default function ExcluirProdutos() {
     </ImageBackground>
   );
 }
+
+const styles = StyleSheet.create({
+  backgroundImage: {
+    flex: 1,
+    width: width,
+    height: height,
+  },
+  imageStyle: {
+    resizeMode: 'cover',
+    opacity: 0.5,
+  },
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'rgba(82, 10, 146, 0.5)', // Mantém a sobreposição roxa translúcida
+  },
+  title: {
+    fontSize: 30,
+    fontWeight: 'bold',
+    color: '#FFF',
+    marginBottom: 20,
+  },
+  input: {
+    width: width * 0.8,
+    height: 50,
+    backgroundColor: '#FFF',
+    marginBottom: 20,
+    paddingHorizontal: 10,
+    borderRadius: 8,
+    borderColor: '#ccc',
+    borderWidth: 1,
+  },
+  productItem: {
+    backgroundColor: '#FFF',
+    padding: 10,
+    marginVertical: 5,
+    borderRadius: 8,
+    width: width * 0.9,
+  },
+  productText: {
+    fontSize: 18,
+    color: '#000',
+  },
+  deleteButton: {
+    backgroundColor: 'red',
+    marginTop: 10,
+    padding: 10,
+    borderRadius: 8,
+  },
+  deleteButtonText: {
+    color: '#FFF',
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  feedbackMessage: {
+    fontSize: 18,
+    color: 'green',
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+});
