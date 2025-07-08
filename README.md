@@ -7,8 +7,16 @@ Aplicativo mobile desenvolvido com Expo (React Native), JavaScrippt e banco de d
 ## 📷 Imagens do Aplicativo
 1. Tela Inicial
 
+Tela de boas-vindas ao aplicativo William GShop com duas opções: Entrar (login) ou Cadastrar (criar uma nova conta).
    ![image](https://github.com/user-attachments/assets/14e169b6-822f-49f9-be03-941a0135742b)
 
 
-Tela de boas-vindas ao aplicativo William GShop com duas opções: Entrar (login) ou Cadastrar (criar uma nova conta).
+
+2. Tela de Cadastro
+
+Formulário para novo cadastro de usuário com campos para Nome, E-mail, Idade e Senha. Após o preenchimento, o botão Finalizar cria a conta no banco de dados.
+
+![image](https://github.com/user-attachments/assets/3e293d0b-f3e1-41e0-8cab-1540dad4b42a)
+
+
 
