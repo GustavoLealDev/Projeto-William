@@ -175,3 +175,68 @@ export default function ProductListScreen() {
   );
 }
 
+const styles = StyleSheet.create({
+  backgroundImage: {
+    flex: 1,
+    width: width,
+    height: height,
+  },
+  imageStyle: {
+    resizeMode: 'cover',
+    opacity: 0.5,
+  },
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'rgba(82, 10, 146, 0.5)', // Mantém a sobreposição roxa translúcida
+  },
+  title: {
+    fontSize: 30,
+    fontWeight: 'bold',
+    color: '#FFF',
+    marginBottom: 20,
+  },
+  productItem: {
+    backgroundColor: '#FFF',
+    padding: 10,
+    marginVertical: 5,
+    borderRadius: 8,
+    width: width * 0.9,
+  },
+  productText: {
+    fontSize: 18,
+    color: '#000',
+  },
+  errorText: {
+    fontSize: 18,
+    color: 'red',
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  input: {
+    width: "100%",
+    height: 40,
+    backgroundColor: '#FFF',
+    marginBottom: 10,
+    paddingHorizontal: 10,
+    borderRadius: 8,
+    borderColor: '#ccc',
+    borderWidth: 1,
+  },
+  button: {
+
+    backgroundColor: "#f3a10d",
+    width: "100%",
+    height: 40,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 8,
+    marginTop: 10,
+  },
+  buttonText: {
+    color: "#FFF",
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+});
