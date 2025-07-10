@@ -28,3 +28,8 @@ Após o login, o usuário escolhe o que deseja fazer: adicionar, editar, excluir
 
 ![image](https://github.com/user-attachments/assets/126749c1-2a88-44d4-a817-fe9421699739)
 
+5. Adicionar Produtos
+
+Formulário para adicionar um novo produto com Nome, Descrição, Preço e Quantidade. Os dados são salvos no banco de dados.
+
+![image](https://github.com/user-attachments/assets/9b67b67d-2119-419f-98ee-e1e78db52761)
