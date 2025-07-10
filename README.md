@@ -22,5 +22,9 @@ Formulário para novo cadastro de usuário com campos para Nome, E-mail, Idade e
 
 ![image](https://github.com/user-attachments/assets/f3516f3c-691c-4c25-8b2c-ba99f31ce0a4)
 
+4. Menu Principal
 
+Após o login, o usuário escolhe o que deseja fazer: adicionar, editar, excluir produtos ou visualizar o controle de vendas.
+
+![image](https://github.com/user-attachments/assets/126749c1-2a88-44d4-a817-fe9421699739)
 
