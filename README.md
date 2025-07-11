@@ -33,3 +33,7 @@ Após o login, o usuário escolhe o que deseja fazer: adicionar, editar, excluir
 Formulário para adicionar um novo produto com Nome, Descrição, Preço e Quantidade. Os dados são salvos no banco de dados.
 
 ![image](https://github.com/user-attachments/assets/9b67b67d-2119-419f-98ee-e1e78db52761)
+
+6. Lista de Produtos
+
+Lista com todos os produtos cadastrados. Cada produto possui opções de Alterar (editar dados) ou Comprar (realizar uma venda).
