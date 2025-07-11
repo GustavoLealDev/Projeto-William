@@ -37,3 +37,6 @@ Formulário para adicionar um novo produto com Nome, Descrição, Preço e Quant
 6. Lista de Produtos
 
 Lista com todos os produtos cadastrados. Cada produto possui opções de Alterar (editar dados) ou Comprar (realizar uma venda).
+
+<img width="226" height="377" alt="image" src="https://github.com/user-attachments/assets/2f5d7df9-d9f9-4988-ab23-b8cc12a27a31" />
+
