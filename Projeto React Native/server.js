@@ -39,3 +39,23 @@ app.post('/usuarios', (req, res) => {
     });
 });
 
+// Rota para login de usuários
+app.post('/login', (req, res) => {
+    const { email, senha } = req.body;
+    if (!email || !senha) {
+        return res.status(400).json({ message: 'Todos os campos são obrigatórios.' });
+    }
+    const query = 'SELECT * FROM Usuario WHERE email = ? AND senha = ?';
+    db.query(query, [email, senha], (err, results) => {
+        if (err) {
+            console.error('Erro ao fazer login:', err);
+            return res.status(500).json({ message: 'Erro ao fazer login.' });
+        }
+        if (results.length > 0) {
+            res.json({ message: 'Login realizado com sucesso!', usuario: results[0] });
+        } else {
+            res.status(401).json({ message: 'Email ou senha incorretos.' });
+        }
+    });
+});
+
