@@ -75,3 +75,15 @@ app.post('/produtos', (req, res) => {
     });
 });
 
+// Rota para listar produtos
+app.get('/produtos', (req, res) => {
+    const query = 'SELECT * FROM Produto';
+    db.query(query, (err, results) => {
+        if (err) {
+            console.error('Erro ao listar produtos:', err);
+            return res.status(500).json({ message: 'Erro ao listar produtos.' });
+        }
+        res.json(results);
+    });
+});
+
