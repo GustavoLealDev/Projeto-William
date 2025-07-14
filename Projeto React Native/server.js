@@ -126,3 +126,37 @@ app.delete('/produtos/:id', (req, res) => {
     });
 });
 
+// Rota para registrar venda
+app.post('/vender', (req, res) => {
+    const { id, quantidadeVendida } = req.body;
+    const querySelect = 'SELECT quantidade, preco FROM Produto WHERE id = ?';
+    db.query(querySelect, [id], (err, results) => {
+        if (err) {
+            console.error('Erro ao buscar produto:', err);
+            return res.status(500).json({ message: 'Erro ao buscar produto.' });
+        }
+        if (results.length > 0) {
+            const quantidadeAtual = results[0].quantidade;
+            const preco = results[0].preco;
+            const novaQuantidade = quantidadeAtual - quantidadeVendida;
+            const queryUpdate = 'UPDATE Produto SET quantidade = ? WHERE id = ?';
+            db.query(queryUpdate, [novaQuantidade < 0 ? 0 : novaQuantidade, id], (err) => {
+                if (err) {
+                    console.error('Erro ao atualizar produto:', err);
+                    return res.status(500).json({ message: 'Erro ao atualizar produto.' });
+                }
+                const queryInsert = 'INSERT INTO Venda (produto_id, quantidade, valor) VALUES (?, ?, ?)';
+                db.query(queryInsert, [id, quantidadeVendida, preco * quantidadeVendida], (err) => {
+                    if (err) {
+                        console.error('Erro ao registrar venda:', err);
+                        return res.status(500).json({ message: 'Erro ao registrar venda.' });
+                    }
+                    res.json({ message: 'Venda registrada com sucesso!' });
+                });
+            });
+        } else {
+            res.status(404).json({ message: 'Produto não encontrado.' });
+        }
+    });
+});
+
