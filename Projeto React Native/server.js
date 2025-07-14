@@ -59,3 +59,19 @@ app.post('/login', (req, res) => {
     });
 });
 
+// Rota para cadastrar produtos
+app.post('/produtos', (req, res) => {
+    const { nome, descricao, preco, quantidade } = req.body;
+    if (!nome || !descricao || !preco || !quantidade) {
+        return res.status(400).json({ message: 'Todos os campos são obrigatórios.' });
+    }
+    const query = 'INSERT INTO Produto (nome, descricao, preco, quantidade) VALUES (?, ?, ?, ?)';
+    db.query(query, [nome, descricao, preco, quantidade], (err, result) => {
+        if (err) {
+            console.error('Erro ao cadastrar produto:', err);
+            return res.status(500).json({ message: 'Erro ao cadastrar produto.' });
+        }
+        res.json({ message: 'Produto cadastrado com sucesso!', produto: { id: result.insertId, nome, descricao, preco, quantidade } });
+    });
+});
+
