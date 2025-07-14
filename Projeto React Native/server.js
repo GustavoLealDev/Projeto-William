@@ -160,3 +160,24 @@ app.post('/vender', (req, res) => {
     });
 });
 
+// Rota para listar vendas
+app.get('/vendas', (req, res) => {
+    const query = `
+        SELECT v.id, p.nome, p.descricao, v.quantidade, v.valor, v.data_venda 
+        FROM Venda v 
+        JOIN Produto p ON v.produto_id = p.id
+    `;
+    db.query(query, (err, results) => {
+        if (err) {
+            console.error('Erro ao listar vendas:', err);
+            return res.status(500).json({ message: 'Erro ao listar vendas.' });
+        }
+        res.json(results);
+    });
+});
+
+
+// Iniciar o servidor na porta 3000
+app.listen(3000, '0.0.0.0', () => {
+    console.log('Servidor rodando na porta 3000');
+});
