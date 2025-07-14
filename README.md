@@ -22,5 +22,21 @@ Formulário para novo cadastro de usuário com campos para Nome, E-mail, Idade e
 
 ![image](https://github.com/user-attachments/assets/f3516f3c-691c-4c25-8b2c-ba99f31ce0a4)
 
+4. Menu Principal
 
+Após o login, o usuário escolhe o que deseja fazer: adicionar, editar, excluir produtos ou visualizar o controle de vendas.
+
+![image](https://github.com/user-attachments/assets/126749c1-2a88-44d4-a817-fe9421699739)
+
+5. Adicionar Produtos
+
+Formulário para adicionar um novo produto com Nome, Descrição, Preço e Quantidade. Os dados são salvos no banco de dados.
+
+![image](https://github.com/user-attachments/assets/9b67b67d-2119-419f-98ee-e1e78db52761)
+
+6. Lista de Produtos
+
+Lista com todos os produtos cadastrados. Cada produto possui opções de Alterar (editar dados) ou Comprar (realizar uma venda).
+
+<img width="226" height="377" alt="image" src="https://github.com/user-attachments/assets/2f5d7df9-d9f9-4988-ab23-b8cc12a27a31" />
 
