@@ -87,3 +87,42 @@ app.get('/produtos', (req, res) => {
     });
 });
 
+// Rota para atualizar produtos
+app.put('/produtos/:id', (req, res) => {
+    const { id } = req.params;
+    const { nome, descricao, preco, quantidade } = req.body;
+    const query = 'UPDATE Produto SET nome = ?, descricao = ?, preco = ?, quantidade = ? WHERE id = ?';
+    db.query(query, [nome, descricao, preco, quantidade, id], (err, result) => {
+        if (err) {
+            console.error('Erro ao atualizar produto:', err);
+            return res.status(500).json({ message: 'Erro ao atualizar produto.' });
+        }
+        res.json({ message: 'Produto atualizado com sucesso!' });
+    });
+});
+
+// Rota para excluir produtos com verificação de senha
+app.delete('/produtos/:id', (req, res) => {
+    const { id } = req.params;
+    const { senha } = req.body;
+    const queryCheck = 'SELECT * FROM Usuario WHERE senha = ?';
+    db.query(queryCheck, [senha], (err, results) => {
+        if (err) {
+            console.error('Erro ao verificar senha:', err);
+            return res.status(500).json({ message: 'Erro ao verificar senha.' });
+        }
+        if (results.length > 0) {
+            const queryDelete = 'DELETE FROM Produto WHERE id = ?';
+            db.query(queryDelete, [id], (err, result) => {
+                if (err) {
+                    console.error('Erro ao excluir produto:', err);
+                    return res.status(500).json({ message: 'Erro ao excluir produto.' });
+                }
+                res.json({ message: 'Produto excluído com sucesso!' });
+            });
+        } else {
+            res.status(401).json({ message: 'Senha incorreta.' });
+        }
+    });
+});
+
