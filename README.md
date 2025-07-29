@@ -40,3 +40,11 @@ Lista com todos os produtos cadastrados. Cada produto possui opções de Alterar
 
 <img width="226" height="377" alt="image" src="https://github.com/user-attachments/assets/2f5d7df9-d9f9-4988-ab23-b8cc12a27a31" />
 
+
+## ⚙️ Como executar o projeto
+Pré-requisitos
+Node.js instalado
+
+MySQL instalado e rodando
+
+Expo Go instalado no celular (ou emulador Android/iOS)
