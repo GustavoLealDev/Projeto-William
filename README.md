@@ -23,8 +23,19 @@ MySQL instalado e rodando
 
 Expo Go instalado no celular (ou emulador Android/iOS)
 
-1. Clone o repositório
+**1. Clone o repositório**
 
+https://github.com/GustavoLealDev/Projeto-William.git
+
+**2. Configure o backend (Node.js + MySQL)**
+
+Crie um banco de dados merceariadb no MySQL com as seguintes tabelas.
+
+produto 
+produtos 
+usuario 
+venda 
+vendas
 
 
 ## 👨‍💼 Sobre o Projeto
