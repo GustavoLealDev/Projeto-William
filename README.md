@@ -15,12 +15,17 @@ https://www.youtube.com/watch?v=5N1iBX4aMH0
 
 
 ## ⚙️ Como executar o projeto
-Pré-requisitos
+**Pré-requisitos:**
+
 Node.js instalado
 
 MySQL instalado e rodando
 
 Expo Go instalado no celular (ou emulador Android/iOS)
+
+1. Clone o repositório
+
+
 
 ## 👨‍💼 Sobre o Projeto
 Este app foi criado especialmente para um amigo (William), que é dono de uma loja. Com o sistema, ele pode cadastrar e gerenciar seus produtos, controlar as vendas e visualizar o total arrecadado. A interface é simples, amigável e eficiente.
