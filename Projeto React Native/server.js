@@ -126,7 +126,7 @@ app.delete('/produtos/:id', (req, res) => {
     });
 });
 
-// Rota para registrar venda
+// Rota para registrar vendas
 app.post('/vender', (req, res) => {
     const { id, quantidadeVendida } = req.body;
     const querySelect = 'SELECT quantidade, preco FROM Produto WHERE id = ?';
