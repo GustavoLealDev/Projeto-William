@@ -5,38 +5,38 @@ Aplicativo mobile desenvolvido com Expo (React Native), JavaScrippt e banco de d
 
 
 ## 📷 Imagens do Aplicativo
-1. Tela Inicial
-
-Tela de boas-vindas ao aplicativo William GShop com duas opções: Entrar (login) ou Cadastrar (criar uma nova conta).
-   ![image](https://github.com/user-attachments/assets/14e169b6-822f-49f9-be03-941a0135742b)
 
 
+<img width="216" height="170" alt="Screenshot 2025-07-29 004717" src="https://github.com/user-attachments/assets/a2424f8b-4b1c-4005-8eba-ffe2dccde43a" />
 
-2. Tela de Cadastro
+Video do aplicativo funcionando abaixo:
 
-Formulário para novo cadastro de usuário com campos para Nome, E-mail, Idade e Senha. Após o preenchimento, o botão Finalizar cria a conta no banco de dados.
+https://www.youtube.com/watch?v=5N1iBX4aMH0
 
-![image](https://github.com/user-attachments/assets/3e293d0b-f3e1-41e0-8cab-1540dad4b42a)
 
-3. Tela de Login
+## ⚙️ Como executar o projeto
+**Pré-requisitos:**
 
-![image](https://github.com/user-attachments/assets/f3516f3c-691c-4c25-8b2c-ba99f31ce0a4)
+Node.js instalado
 
-4. Menu Principal
+MySQL instalado e rodando
 
-Após o login, o usuário escolhe o que deseja fazer: adicionar, editar, excluir produtos ou visualizar o controle de vendas.
+Expo Go instalado no celular (ou emulador Android/iOS)
 
-![image](https://github.com/user-attachments/assets/126749c1-2a88-44d4-a817-fe9421699739)
+**1. Clone o repositório**
 
-5. Adicionar Produtos
+https://github.com/GustavoLealDev/Projeto-William.git
 
-Formulário para adicionar um novo produto com Nome, Descrição, Preço e Quantidade. Os dados são salvos no banco de dados.
+**2. Configure o backend (Node.js + MySQL)**
 
-![image](https://github.com/user-attachments/assets/9b67b67d-2119-419f-98ee-e1e78db52761)
+Crie um banco de dados merceariadb no MySQL com as seguintes tabelas.
 
-6. Lista de Produtos
+produto 
+produtos 
+usuario 
+venda 
+vendas
 
-Lista com todos os produtos cadastrados. Cada produto possui opções de Alterar (editar dados) ou Comprar (realizar uma venda).
 
-<img width="226" height="377" alt="image" src="https://github.com/user-attachments/assets/2f5d7df9-d9f9-4988-ab23-b8cc12a27a31" />
-
+## 👨‍💼 Sobre o Projeto
+Este app foi criado especialmente para um amigo (William), que é dono de uma loja. Com o sistema, ele pode cadastrar e gerenciar seus produtos, controlar as vendas e visualizar o total arrecadado. A interface é simples, amigável e eficiente.
