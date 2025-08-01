@@ -141,3 +141,74 @@ export default function ControleDeVendas() {
   );
 }
 
+const styles = StyleSheet.create({
+  backgroundImage: {
+    flex: 1,
+    width: width,
+    height: height,
+  },
+  imageStyle: {
+    resizeMode: 'cover',
+    opacity: 0.5,
+  },
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'rgba(82, 10, 146, 0.5)', // Mantém a sobreposição roxa translúcida
+  },
+  title: {
+    fontSize: 30,
+    fontWeight: 'bold',
+    color: '#FFF',
+    marginBottom: 20,
+  },
+  productContainer: {
+    width: width * 0.9,
+    backgroundColor: '#f9f9f9',
+    padding: 20,
+    marginBottom: 20,
+    borderRadius: 8,
+    borderColor: '#ccc',
+    borderWidth: 1,
+  },
+  productText: {
+    fontSize: 16,
+    marginBottom: 5,
+  },
+  input: {
+    width: width * 0.8,
+    height: 50,
+    backgroundColor: '#FFF',
+    marginBottom: 20,
+    paddingHorizontal: 10,
+    borderRadius: 8,
+    borderColor: '#ccc',
+    borderWidth: 1,
+  },
+  button: {
+    backgroundColor: "#f3a10d",
+    width: "100%",
+    height: 40,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 8,
+    marginTop: 10,
+  },
+  buttonText: {
+    color: "#FFF",
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  totalArrecadado: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#FFF',
+    marginTop: 20,
+  },
+  message: {
+    fontSize: 16,
+    color: 'red',
+    marginBottom: 20,
+  },
+});
